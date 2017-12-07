@@ -1,6 +1,11 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
+import configureStore from 'app//store/configureStore'
+import {Provider} from 'react-redux';
 
+import Home from 'app/container/HomeTab'
+
+const store = configureStore();
 
 class Testing extends React.Component {
     render() {
@@ -28,6 +33,16 @@ export default class App extends React.Component {
         );
     }
 }
+
+// class App extends Component {
+//     render() {
+//         return (
+//             <Provider store={store}>
+//                 <Home />
+//             </Provider>
+//         )
+//     }
+// }
 
 
 const styles = StyleSheet.create({
