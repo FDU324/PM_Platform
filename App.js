@@ -23,8 +23,8 @@ export default class App extends React.Component {
                 <Text>Shake your phone to open the developer menu.</Text>
                 <Text>Hello</Text>
                 <Image source={pic} style={{width: 193, height: 110}}/>
-                <Testing name='hhhsdfa'/>
-        
+                <Testing name='dsaafasfdaf'/>
+        </View>
         );
     }
 }
