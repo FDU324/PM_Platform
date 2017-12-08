@@ -1,9 +1,9 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
-import configureStore from './app/store/configStore'
+import configureStore from './app/store/configStore';
 import { Provider } from 'react-redux';
 
-import MyApp from './app/containers/HomeTab'
+import MyApp from './app/containers/HomeTab';
 
 const store = configureStore();
 

@@ -15,10 +15,6 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
         "semi": [
             "error",
             "always"
