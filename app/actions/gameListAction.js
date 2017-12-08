@@ -1,7 +1,7 @@
 /**
  * Created by kevintestt on 2017/11/27.
  */
-import * as types from '../action/actionType';
+import * as types from './actionType';
 
 export function fetchGameList(index = 1) {
     return dispatch => {
