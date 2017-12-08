@@ -1,7 +1,8 @@
 /**
  * Created by kevintestt on 2017/11/27.
  */
-import {connect} from 'react-redux';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
     AppRegistry,
     StyleSheet,
@@ -17,17 +18,13 @@ import {
 /**
  * 触发Action
  */
-import {fetchGameList} from '../action/gameListAction';
-/**
- * 用于将UI和Reducer绑定
- */
-import {connect} from 'react-redux';
+import { fetchGameList } from '../actions/gameListAction';
 
-class GameList extends Component {
-    
+
+export default class GameList extends React.Component {
+
     constructor(props) {
         super(props);
-        // 初始状态
         this.state = {};
         this.dataSource = new ListView.DataSource({
             rowHasChanged: ((row1, row2) => row1 !== row2)
@@ -41,7 +38,7 @@ class GameList extends Component {
      *      3. 最后刷新界面显示数据
      */
     componentWillMount() {
-        const {dispatch} = this.props;
+        const { dispatch } = this.props;
         dispatch(fetchGameList(index = 1));
 
         if (Platform.OS === 'android') {
@@ -61,7 +58,7 @@ class GameList extends Component {
      */
     onBackAndroid() {
 
-        const {navigator} = this.props;
+        const { navigator } = this.props;
         if (navigator.getCurrentRoutes().length > 1) {
             navigator.pop();
             return true;
@@ -73,7 +70,7 @@ class GameList extends Component {
 
 
     render() {
-        const {gameListReducer} = this.props;
+        const { gameListReducer } = this.props;
 
         return (
             <ListView
@@ -88,12 +85,3 @@ class GameList extends Component {
         return
     }
 }
-
-function mapStateToProps(state) {
-    const {gameListReducer} = state;
-    return {
-        gameListReducer
-    }
-}
-
-export default connect(mapStateToProps)(GameList);

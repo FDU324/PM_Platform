@@ -1,7 +1,7 @@
 /**
  * Created by kevintestt on 2017/11/27.
  */
-import * as types from '../action/actionType';
+import * as types from '../actions/actionType';
 
 const initialState = {
     gameList: []
