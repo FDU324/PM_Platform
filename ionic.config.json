@@ -1,0 +1,8 @@
+{
+  "name": "PM_Platform_Ionic",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
