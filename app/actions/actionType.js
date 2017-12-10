@@ -1,4 +1,23 @@
 /**
  * Created by kevintestt on 2017/11/27.
  */
-export const GAME_LIST = 'GAME_LIST';
+const GAME_LIST = 'GAME_LIST';
+
+/**
+ * 好友部分
+ */
+const FETCH_LATEST_MESSAGE = 'FETCH_LATEST_MESSAGE';
+const RECEIVE_NEW_MESSAGE = 'RECEIVE_NEW_MESSAGE';
+const SEND_NEW_MESSAGE = 'SEND_NEW_MESSAGE';
+const DELETE_SESSION = 'DELETE_SESSION';
+
+
+
+export {
+    GAME_LIST,
+
+    FETCH_LATEST_MESSAGE,
+    RECEIVE_NEW_MESSAGE,
+    SEND_NEW_MESSAGE,
+    DELETE_SESSION,
+};

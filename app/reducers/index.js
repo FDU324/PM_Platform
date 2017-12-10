@@ -3,9 +3,12 @@
  */
 import {combineReducers} from 'redux';
 import gameListReducer from './gameListReducer';
+import friendReducer from './friendReducer';
+
 
 const rootReducer = combineReducers({
-    gameListReducer
+    gameListReducer,
+    friendReducer,
 });
 
 export default rootReducer;
